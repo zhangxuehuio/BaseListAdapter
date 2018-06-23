@@ -5,7 +5,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.blankj.utilcode.util.Utils;
+
+import com.baselistadapter.utils.BaseListAdapterUtils;
 
 import java.util.List;
 
@@ -29,7 +30,7 @@ public abstract class BaseRecyclerViewAdapter<T> extends RecyclerView.Adapter<Ba
 
     @Override
     public BaseRecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new BaseRecyclerViewHolder(LayoutInflater.from(Utils.getApp()).inflate(layoutId, parent, false));
+        return new BaseRecyclerViewHolder(LayoutInflater.from(BaseListAdapterUtils.getApp()).inflate(layoutId, parent, false));
     }
 
     @Override

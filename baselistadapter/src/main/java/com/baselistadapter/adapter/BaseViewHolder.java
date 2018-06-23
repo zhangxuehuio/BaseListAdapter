@@ -23,7 +23,6 @@ import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.facebook.drawee.view.SimpleDraweeView;
 
 
 /**
@@ -184,15 +183,6 @@ public class  BaseViewHolder {
     public BaseViewHolder setImageBitmap(@IdRes int viewId, Bitmap bitmap) {
         ImageView view = getView(viewId);
         view.setImageBitmap(bitmap);
-        return this;
-    }
-
-    /**
-     * Add an action to set the image of an image view. Can be called multiple times.
-     */
-    public BaseViewHolder setImageUrl(@IdRes int viewId, String url) {
-        SimpleDraweeView view = getView(viewId);
-        view.setImageURI(url);
         return this;
     }
 

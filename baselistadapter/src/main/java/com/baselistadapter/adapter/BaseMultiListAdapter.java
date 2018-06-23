@@ -2,7 +2,8 @@ package com.baselistadapter.adapter;
 
 import android.support.annotation.Nullable;
 
-import com.blankj.utilcode.util.LogUtils;
+
+import com.baselistadapter.utils.LogUtils;
 
 import java.util.List;
 

@@ -24,7 +24,6 @@ import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.facebook.drawee.view.SimpleDraweeView;
 
 /**
  * Created by zhangxuehui on 2018/6/14.
@@ -188,14 +187,6 @@ public class BaseRecyclerViewHolder extends RecyclerView.ViewHolder {
         return this;
     }
 
-    /**
-     * Add an action to set the image of an image view. Can be called multiple times.
-     */
-    public BaseRecyclerViewHolder setImageUrl(@IdRes int viewId, String url) {
-        SimpleDraweeView view = getView(viewId);
-        view.setImageURI(url);
-        return this;
-    }
 
     /**
      * Add an action to set the alpha of a view. Can be called multiple times.

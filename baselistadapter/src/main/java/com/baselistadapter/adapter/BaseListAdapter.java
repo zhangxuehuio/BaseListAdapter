@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 
+import com.baselistadapter.utils.LogUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 
